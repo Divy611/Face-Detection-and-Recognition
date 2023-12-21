@@ -59,7 +59,7 @@ while True:
 		face_section = frame[y-offset:y+h+offset, x-offset:x+w+offset]
 		face_section = cv2.resize(face_section, (100, 100))
 		out = knn(trainset, face_section.flatten())
-		cv2.putText(frame, names[int(out)],(x,y-10), cv2.FONT_HERSHEY_SIMPLEX, 1,(0,0,0),2,cv2.LINE_AA)
+		cv2.putText(frame, names[int(out)],(x,y-10), cv2.FONT_ITALIC, 1,(0,0,0),2,cv2.LINE_AA)
 		cv2.rectangle(frame, (x,y), (x+w,y+h), (0,255,255), 2)
 
 	cv2.imshow("Faces", frame)
