@@ -1,1 +1,5 @@
 /face_dataset/
+__pycache__/
+config.py
+face_data_firebase.py
+face_recognition_firebase.py
